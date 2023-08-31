@@ -1,0 +1,22 @@
+[package]
+name = "promptability"
+version = "0.1.0"
+authors = ["Jimmy Moon <ragingwind@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/ragingwind/promptability"
+repository = "https://github.com/ragingwind/promptability.git"
+description = "Port of Mozilla's Readability.js library to Rust dedicated to prompting"
+keywords = ["readability", "chatgpt", "prompt", "html", "scrapper"]
+categories = []
+edition = "2021"
+
+[dependencies]
+reqwest = {version = "0.11", features = ["blocking", "json"]}
+article_scraper = "2.0.0"
+url = "2.4.0"
+futures = { version="0.3.28", features=["executor"] }
+tokio = { version = "1.27", features = ["macros", "fs", "io-util", "rt-multi-thread" ] }
+html5ever = "0.26.0"
+markup5ever_rcdom = "0.2.0"
+lazy_static = "1.4.0"
+regex = "1.9.1"

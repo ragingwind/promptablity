@@ -1,0 +1,8 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "./Cargo.toml"
+  ],
+  "rust-analyzer.runnables.extraEnv": {
+    "SAMPLES_DIR": "${workspaceFolder}/samples"
+  }
+}
